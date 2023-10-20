@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Overleaf Resume Helper",
+    "version": "1.0.0",
+    "description": "OverleafResumeHelper",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.overleaf.com/project/*"
+            ],
+            "js": [
+                "lib/jquery-3.6.0.min.js",
+                "lib/content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "webRequest",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://www.overleaf.com/project/*"
+    ],
+    "action": {
+        "default_popup": "lib/popup/popup.html"
+    }
+}
