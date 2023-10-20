@@ -8,4 +8,5 @@ If you want to try it out, simply clone this repo, then load the extension into 
 You will see an upload button appear on the toolbar as shown below:
 ![img](./resources/upload-button.png)
 
-To set the endpoint to upload to, simply input the endpoint url into the textarea.
+To set the endpoint to upload to, simply input the endpoint url into the textarea:
+![img](./resources/endpoint.png)
